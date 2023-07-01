@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            text-align: center;
+        }
+
+body {
+      /* background-image: url("https://th.bing.com/th/id/R.3c7118236e499664a73faffea61b67ae?rik=roCX0Rd72SF0DQ&riu=http%3a%2f%2fimages7.alphacoders.com%2f337%2f337896.jpg&ehk=ANw0U3m%2b5hvKkNJo8CehcapMX962Wb3P69%2fddlXAJWc%3d&risl=&pid=ImgRaw&r=0"); */
+
+    border: 0px solid #acd1e0;;
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  gap: 30px;
+  background: #acd1e0;
+  
+}
+h1{
+    border: 1px solid  #acd1e0;
+    background: linear-gradient(45deg, hwb(208 61% 15%), #b4dbe8, #ebf1f3);
+    font-size:150px;
+    padding: 30px;
+    width: 100%;
+    align-items: center;
+    display: grid;
+    place-content: center;
+    grid-auto-flow: column;
+}
+h1:hover{
+    color: rgb(48, 120, 144);
+}
+p{
+    border: 0px solid   #acd1e0;
+    font-size: 30px;
+
+}
+#blogs{
+    border: 0px solid   #acd1e0;
+}
+#blogs img {
+  --f: .1; /* the parallax factor (the smaller the better) */
+  --r: 10px; /* radius */
+  
+  --_f: calc(100%*var(--f)/(1 + var(--f)));
+  --_a: calc(90deg*var(--f));
+  width: 250px; /* the image size */
+  aspect-ratio: calc(1 + var(--f));
+  object-fit: cover;
+  clip-path: inset(0 var(--_f) 0 0 round var(--r));
+  transform: perspective(400px) var(--_t,rotateY(var(--_a)));
+  transition: .5s;
+  cursor: pointer;
+}
+img:hover {
+  clip-path: inset(0 0 0 var(--_f) round var(--r));
+  --_t:translateX(calc(-1*var(--_f))) rotateY(calc(-1*var(--_a)))
+}
+#img4{
+    height: 250px;
+    width: 250px;
+float: left;
+}
+
+.navbar{
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        padding-left: 50px;
+        padding-right: 30px;
+        padding-top: 50px;
+        /* position:fixed; */
+        z-index: 10;
+        width: 100%;
+
+    }
+    nav{
+        flex:1;
+        text-align:right;
+       
+
+    }
+    nav ul{
+        display: inline-block;
+        list-style: none;
+    }
+    nav ul li{ 
+        display:inline-block;
+        margin-right: 70px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        font-size:24px;
+        color: white;
+        font-family: sans-serif;
+    }
+    nav ul li button{
+        font-size: 20px;
+        color: white;
+        outline: none;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        font-family: sans-serif;
+    }
+  
+    nav ul li a:hover{
+        background: transparent;
+        color: rgb(34, 32, 32);
+        font-weight: bolder;
+        font: 1.8rem 'AmstelvarAlpha', sans-serif;
+        font-style: oblique 23deg;
+}
+    
+    a{
+        text-decoration: none;
+        color:rgb(255, 255, 255);
+        font-size: 28px;
+    }
+    p{
+            color: rgb(255, 255, 255);
+            font-size: xx-large;
+    }
+    div a{
+         
+        border:1px solid #acd1e0;
+        padding:10px;
+        margin:15px;
+        border-radius: 17px;
+        display: block;
+        
+    }
+    #MenuaItems{
+        display:contents;
+    }
+    </style>
+</head>
+<body>
+    <div class="full-page mt-3">
+        <div class="navbar">
+           <nav>
+                <ul id="MenuaItems">
+                    <img src="https://i.ibb.co/tmTHjSn/depositphotos-83352484-stock-illustration-albatross-flying-label-removebg-preview.png"   alt="logo" id="img4" >
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="places.html">PLACES</a></li>
+                    <li><a href="blogs.html">BLOGS</a></li>
+                    <li><a href="contact.html" id="log">CONTACT US</a></li><hr>
+                </ul>
+            </nav>
+        </div>
+    </div>
+   
+    <h1> 
+        Traveler's Haven
+    </h1>
+    <div id="blogs">
+ 
+        <img src="https://picsum.photos/id/669/300/300" alt="the back of random person" id="firstimg">
+        <p>
+
+            Traveling opens our eyes to the wonders of the world and fuels our curiosity for new cultures and perspectives.<br> As Mark Twain once said, <b>"Twenty years from now you will be more disappointed by the things you didn't do than by the ones you did do."</b> So, let's embrace the adventure and create memories that will last a lifetime.<br>"To travel is to discover that everyone is wrong about other countries." - Aldous Huxley
+
+        </p><br>
+<img src="https://assets.codepen.io/1480814/pexels-pixabay-62655.jpg" alt="an eagle" style="--f:.12;--r:5px" id="secimg">
+<p>
+    Every trip we embark upon has the potential to transform us. It's through travel that we gather stories to share with others, inspiring and captivating them with our experiences. <br>So, let's explore the world and let it shape us into the best version of ourselves.<br>
+
+    <b>"Travel makes one modest. You see what a tiny place you occupy in the world." - Gustave Flaubert</b><br>
+    
+    When we travel, we realize how vast and diverse the world truly is. It humbles us, reminding us that we are just a small part of the grand tapestry of humanity. So, let's embrace the humility that travel offers and appreciate the beauty of our interconnected world.</p><br>
+<img src="https://picsum.photos/id/326/300/300" alt="a cup of something to drink, probably some tea" style="--f:.08;--r:20px" id="thirdimg">
+
+<p>
+    <b>"To travel is to discover that everyone is wrong about other countries." - Aldous Huxley</b><br>
+
+    Traveling breaks down stereotypes and challenges preconceived notions. It allows us to witness the reality of different countries and cultures firsthand, shattering any misconceptions we may have held. So, let's venture out into the unknown and unravel the truths that lie beyond our comfort zones.
+    <br>
+  <b> "Let food be thy medicine and medicine be thy food." - Hippocrates</b><br>
+
+Maintaining a healthy lifestyle begins with nourishing our bodies with wholesome, nutritious food. The choices we make about what we eat have a profound impact on our overall well-being. By prioritizing fresh, whole foods, we empower ourselves to live a vibrant and energetic life.<br>
+
+<b>"Eating well is a form of self-respect." </b>
+    
+    </p><br>
+</div>
+<h1>TRAVELLING AT ITS FINEST</h1>
+
+</body>
+</html>
